@@ -1,9 +1,10 @@
+require("dotenv").config(); // Load environment variables from .env
 const { google } = require("googleapis");
 
 const oauth2Client = new google.auth.OAuth2(
-  "894542221244-rscd09erfmvp0e6e15jhkl0m8a6slieu.apps.googleusercontent.com", // Replace with your Google Client ID
-  "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", // Replace with your Google Client Secret
-  "http://localhost:5000/auth/google/callback" // Same redirect URI as above
+  process.env.GOOGLE_CLIENT_ID, // Use Google Client ID from .env
+  process.env.GOOGLE_CLIENT_SECRET, // Use Google Client Secret from .env
+  "http://localhost:5000/auth/google/callback" // Redirect URI
 );
 
 const scopes = [
@@ -26,4 +27,4 @@ const getRefreshToken = async (code) => {
 };
 
 // Uncomment the line below, replace 'YOUR_AUTHORIZATION_CODE' with the code you get from Google, then run the file.
-getRefreshToken("4/0AVG7fiRupJp5GDCOgMDuOZQRD7Ac6uPR39Ask4E8hyCna8CFa33wDZhkeQGtuZ4qVNPyTw&scope=email%20profile%20https://www.googleapis.com/auth/gmail.send%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=0&hd=somaiya.edu&prompt=consent");
+getRefreshToken("YOUR_AUTHORIZATION_CODE");

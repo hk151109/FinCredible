@@ -1,0 +1,96 @@
+:root {
+    --home-default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --home-background-color: #f0e2b2;
+    --home-frame-background-color: #ffffff;
+    --home-frame-radius: 40px;
+    --home-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--home-default-font-family);
+    background-color: var(--home-background-color)!important;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+  .home-main-container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .home-page-frame {
+    width: 95%;
+    min-height: 95vh;
+    background-color: var(--home-frame-background-color);
+    border-radius: var(--home-frame-radius);
+    box-shadow: var(--home-shadow);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .home-content-section {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .home-headlines-section {
+    flex: 3;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-for-you-section {
+    flex: 6;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-analytics-section {
+    flex: 3;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 1200px) {
+    .home-content-section {
+      flex-direction: column;
+    }
+  
+    .home-headlines-section,
+    .home-for-you-section,
+    .home-analytics-section {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  

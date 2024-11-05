@@ -1,0 +1,84 @@
+/* Navbar container styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(231, 231, 231, 0.9) !important;
+  backdrop-filter: blur(10px) !important;
+  padding: 10px 30px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 10px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+/* Navbar logo styling */
+.navbar-logo h1 {
+  color: #111 !important;
+  font: Nova Square !important;
+  font-size: 30px !important;
+  font-weight: bold !important;
+  margin: 0 !important;
+  transition: color 0.3s ease !important;
+}
+
+.navbar-logo h1:hover {
+  color: #5b0d13 !important; /* Add hover effect to logo */
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 20px !important;
+}
+
+/* Individual link styling */
+.navbar-links li {
+  font-size: 16px !important;
+}
+
+.navbar-links a {
+  text-decoration: none !important;
+  color: #666 !important;
+  font-weight: 500 !important;
+  padding: 10px 15px !important;
+  transition: color 0.3s ease !important, background-color 0.3s ease !important;
+}
+
+.navbar-links a:hover {
+  color: #5b0d13 !important; /* Make the hover color more prominent */
+  background-color: #f0f0f0 !important; /* Subtle background on hover */
+  border-radius: 8px !important; /* Rounded corners on hover */
+}
+
+/* Navbar button icons container */
+.navbar-buttons {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
+/* General styling for the icon buttons */
+.icon-button {
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 0 !important;
+  transition: transform 0.3s ease !important; /* Smooth icon hover scaling */
+}
+
+.icon-button:hover {
+  transform: scale(1.1) !important; /* Slight zoom effect on hover */
+}
+
+.icon-button img.navbar-icon {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  transition: box-shadow 0.3s ease !important;
+}
+
+.icon-button img.navbar-icon:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important; /* Add shadow effect on hover */
+}

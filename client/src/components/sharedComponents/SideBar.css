@@ -1,0 +1,86 @@
+/* Sidebar Styles */
+.sidebar {
+    background-color: #ffffff; /* Background color matching the overall design */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 100%;
+}
+
+.sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-menu {
+    width: 100%;
+}
+
+.sidebar-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333; /* Darker text for better readability */
+    margin-bottom: 20px;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between list items */
+}
+
+.sidebar-list-item {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.sidebar-list-item:hover {
+    background-color: #f0e2b2; /* Light background on hover */
+    transform: translateX(5px); /* Subtle shift on hover */
+    cursor: pointer;
+}
+
+.sidebar-icon {
+    font-size: 1.5rem;
+    color: #6c757d; /* Subtle icon color */
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: #333; /* Match the sidebar title color */
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.sidebar-link:hover {
+    color: #007bff; /* Color change on hover */
+    width: 75%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        padding: 15px;
+    }
+
+    .sidebar-title {
+        font-size: 1rem;
+    }
+
+    .sidebar-list-item {
+        padding: 8px;
+    }
+
+    .sidebar-icon {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,73 @@
+/* Common styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0e2b2; /* Soft gold background */
+  min-height: 100vh;
+}
+
+.login-main-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0e2b2; /* Background color for the main area */
+}
+
+.login-page-frame {
+  width: 95%;
+  min-height: 95vh;
+  background-color: #ffffff;
+  border-radius: 20px; /* More rounded corners */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
+}
+
+.login-page-frame:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+.login-content-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.login-wrapper {
+  width: auto;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form-section {
+  width: 100%;
+  background-color: #d7d7d7; /* Light grey background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-content-section {
+    width: 90%;
+  }
+
+  .login-wrapper {
+    width: 100%;
+  }
+}

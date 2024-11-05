@@ -1,0 +1,23 @@
+.empty-trackings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .tracking-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tracking-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  

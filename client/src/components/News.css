@@ -1,0 +1,36 @@
+.foryou-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.foryou-header {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff; /* Matches the background */
+  z-index: 1;
+}
+
+.scrollable-foryou {
+  max-height: 450px; /* Adjust based on layout */
+  overflow-y: auto;
+}
+
+/* Hide scrollbar but allow scrolling */
+.scrollable-foryou::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable-foryou {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

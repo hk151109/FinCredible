@@ -1,0 +1,145 @@
+.personalfinance-main-container {
+  --background-color: #e6e1bb;
+  --frame-background-color: #ffffff;
+  --frame-radius: 40px;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --title-color: #2D3748;
+  --subtitle-color: #718096;
+  --primary-text-color: #333;
+  --accent-color: #ecc94b;
+  --card-background-color: #fff;
+  --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--background-color);
+}
+
+.personalfinance-page-frame {
+  width: 95%;
+  height: 95%;
+  background-color: var(--frame-background-color);
+  border-radius: var(--frame-radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.personalfinance-content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.personalfinance-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.personalfinance-section {
+  margin-bottom: 40px;
+  text-decoration: none;
+  padding: 20px;
+  background-color: rgba(231, 231, 231, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.personalfinance-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--title-color);
+  margin-bottom: 20px;
+}
+
+.personalfinance-subtitle {
+  color: var(--subtitle-color);
+  margin-bottom: 30px;
+}
+
+.personalfinance-card {
+  background-color: var(--card-background-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+  height: 285px;
+}
+
+.personalfinance-card-img {
+  margin-bottom: 15px;
+  height: 150px;
+  width: 150px;
+}
+
+.personalfinance-card-link {
+  width: 300px;
+}
+
+.personalfinance-card-title {
+  font-weight: 600;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.personalfinance-card-text {
+  color: var(--subtitle-color);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.personalfinance-calculators-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.personalfinance-calculator-card {
+  background-color: var(--card-background-color);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+}
+
+.personalfinance-icon-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.personalfinance-icon-group i {
+  color: var(--accent-color);
+  font-size: 2rem;
+}
+
+.personalfinance-small-icon {
+  font-size: 0.75rem;
+  margin-left: 8px;
+  color: var(--subtitle-color);
+}
+
+@media (max-width: 900px) {
+  .personalfinance-grid,
+  .personalfinance-calculators-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .personalfinance-grid,
+  .personalfinance-calculators-grid {
+    grid-template-columns: 1fr;
+  }
+}

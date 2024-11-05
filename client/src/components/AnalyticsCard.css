@@ -1,0 +1,27 @@
+.analytics-card {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.analytics-card h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.analytics-card p {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.chart-container {
+  width: 100%;
+  height: 120px; /* Adjust this to fit charts nicely */
+}

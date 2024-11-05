@@ -1,0 +1,170 @@
+.prepersonalfinance-main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.prepersonalfinance-page-frame {
+  width: 95%;
+  height: 95%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prepersonalfinance-content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-y: auto;
+}
+
+.prepersonalfinance-section {
+  background-color: rgba(240, 240, 240, 0.95);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.prepersonalfinance-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #2D3748;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.prepersonalfinance-subtitle {
+  color: #718096;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.prepersonalfinance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.prepersonalfinance-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.prepersonalfinance-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.prepersonalfinance-card-img {
+  margin-bottom: 15px;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.prepersonalfinance-card-title {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.prepersonalfinance-card-text {
+  color: #555;
+  font-size: 0.875rem;
+}
+
+.prepersonalfinance-card-link {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.calculators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.prepersonalfinance-calculator-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.prepersonalfinance-calculator-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.prepersonalfinance-icon-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.prepersonalfinance-icon-group i {
+  color: #ecc94b;
+  font-size: 2rem;
+}
+
+.prepersonalfinance-small-icon {
+  font-size: 0.75rem;
+  margin-left: 4px;
+  color: #555;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .prepersonalfinance-page-frame {
+    width: 100%;
+    height: auto;
+  }
+
+  .prepersonalfinance-title {
+    font-size: 1.8rem;
+  }
+
+  .prepersonalfinance-card-img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .prepersonalfinance-content-section {
+    padding: 10px;
+  }
+}

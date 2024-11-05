@@ -1,0 +1,16 @@
+.headline-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.headline-card-link:hover .article-card-headlines {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.article-card-headlines {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}

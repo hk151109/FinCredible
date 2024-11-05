@@ -1,0 +1,251 @@
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-us-container {
+  width: 85%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+  color: #2c3e50;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f3e2b2; /* Soft gold */
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+  transition: all 0.3s ease;
+}
+
+.hero-section:hover {
+  transform: translateY(-3px);
+}
+
+.hero-section h1 {
+  font-size: 2.5em;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.15em;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Team Section */
+.team-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.team-section h2 {
+  font-size: 2em;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 180px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.team-member h3 {
+  font-size: 1.3em;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  color: #777;
+  font-size: 0.95em;
+}
+
+/* Project Description Section */
+.project-description {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.project-description h2 {
+  font-size: 2em;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.project-description p {
+  color: #555;
+  font-size: 1.1em;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+.page-descriptions {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.page-descriptions li {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.page-descriptions li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.page-descriptions h3 {
+  font-size: 1.4em;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.page-descriptions p {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Resources Section */
+.resources-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.resources-section h2 {
+  font-size: 2em;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.resources-section p {
+  color: #555;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.resources-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resources-section a {
+  font-size: 1.15em;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.resources-section a:hover {
+  color: #0056b3;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+  text-align: center;
+  background-color: #f3e2b2;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  transition: all 0.3s ease;
+}
+
+.cta-section:hover {
+  transform: translateY(-3px);
+}
+
+.cta-section h2 {
+  font-size: 2em;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  font-size: 1.15em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+  background-color: #555;
+  transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .page-descriptions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-members {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .page-descriptions {
+    grid-template-columns: 1fr;
+  }
+}

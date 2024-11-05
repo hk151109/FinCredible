@@ -1,0 +1,72 @@
+.results-container {
+	width: 100%;
+	max-width: 1000px;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .results-list {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  .result-item {
+	padding: 15px;
+	border-bottom: 1px solid #eee;
+	transition: background-color 0.2s ease-in-out;
+  }
+  
+  .result-item:hover {
+	background-color: #f8f8f8;
+  }
+  
+  .result-item a {
+	text-decoration: none;
+	color: #000;
+  }
+  
+  .result-title {
+	font-size: 18px;
+	font-weight: bold;
+  }
+  
+  .result-description {
+	font-size: 14px;
+	margin-top: 5px;
+	color: #555;
+  }
+  
+  .result-author {
+	font-size: 12px;
+	margin-top: 10px;
+	color: #999;
+  }
+  
+  @media (max-width: 768px) {
+	.results-container {
+	  width: 90%;
+	}
+  
+	.result-title {
+	  font-size: 16px;
+	}
+  
+	.result-description {
+	  font-size: 12px;
+	}
+  
+	.result-author {
+	  font-size: 10px;
+	}
+  }
+
+
+  .highlight {
+	background-color: yellow;
+	font-weight: bold;
+	color: black;
+  }
+  

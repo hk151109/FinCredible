@@ -1,0 +1,89 @@
+.foryou-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.foryou-header {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff; /* Matches the background */
+  z-index: 1;
+}
+
+.scrollable-foryou {
+  max-height: 450px; /* Adjust based on layout */
+  overflow-y: auto;
+}
+
+/* Hide scrollbar but allow scrolling */
+.scrollable-foryou::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable-foryou {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.article-card {
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.article-card:hover {
+  transform: translateY(-5px); /* Subtle lift effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  background-color: #f0f8ff; /* Slight background color change */
+}
+
+.article-card h3 {
+  font-size: 15px !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  color: #333; /* Ensure the original text color remains */
+}
+
+.article-card h3:hover {
+  color: #360505; /* Color change on hover */
+}
+
+.article-card p {
+  font-size: 15px !important;
+
+  color: #6c757d; /* Keep the existing font color for paragraph text */
+}
+
+.content-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card, .article-card, .analytics-card {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+  }
+
+  .card, .article-card, .analytics-card {
+    width: 100%;
+  }
+}

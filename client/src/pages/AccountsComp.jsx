@@ -68,7 +68,7 @@ function Accounts() {
           <>
             <Row>
               <Col md={12} style={styles.header}>
-                <h1>Welcome to MERN Auth App</h1>
+                <h1>Welcome to FinCredible</h1>
               </Col>
             </Row>
             <Row>

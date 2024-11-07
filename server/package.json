@@ -1,23 +1,15 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "Mern Authentication Backend",
+  "description": "FinCredible Backend",
   "main": "sever.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install --prefix ../client && npm run build --prefix ../client && npm install",
-    "start": "nodemon server.js"
+  "start": "concurrently -k -n \"NODE,FLASK\" -c \"yellow.bold,cyan.bold\" \"npm run server\" \"npm run flask\"",
+  "server": "nodemon server.js",
+  "flask": "cd MachineLearning && python app.py"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GowthamXeno/MERN-Authentication-App.git"
-  },
-  "author": "Gowtham",
+  "author": "Harikrishnan",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/GowthamXeno/MERN-Authentication-App/issues"
-  },
-  "homepage": "https://github.com/GowthamXeno/MERN-Authentication-App#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
@@ -40,6 +32,7 @@
     "passport-local-mongoose": "^8.0.0"
   },
   "devDependencies": {
+    "concurrently": "^9.1.0",
     "nodemon": "^3.1.0"
   }
 }

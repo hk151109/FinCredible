@@ -9,6 +9,10 @@
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "chartjs": "^0.3.24",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "date-fns": "^4.1.0",
+    "highcharts": "^11.4.8",
+    "highcharts-react-official": "^3.2.1",
     "jquery": "^3.7.1",
     "md5": "^2.3.0",
     "mongoose": "^8.3.1",
@@ -45,5 +49,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9"
   }
 }

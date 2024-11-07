@@ -1,0 +1,130 @@
+/* Container for the entire app */
+.app-container {
+    overflow: hidden;
+    height: 100%;
+    background-color: #f8f9fa; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wrapper without any border or frame */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    width: 95vw;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff; /* White background inside the main wrapper */
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Navbar styling */
+.top-navbar {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-bottom: 2px solid #e0e0e0;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content wrapper containing sidebar and main content */
+.content-wrapper {
+    display: flex;
+    flex: 1;
+    margin-top: 15px;
+    height: 100%;
+}
+
+/* Sidebar styling */
+.sidebar {
+    flex: 0 0 240px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1em;
+}
+
+/* Main content area styling */
+.main-content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+/* Table styling for PortfolioSharesList */
+.main-content table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.main-content table thead th {
+    background-color: #222;
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.main-content table tbody td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.main-content table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Profit/Loss colors */
+.profit {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.loss {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Options button styling */
+.options button {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.options button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Chart container */
+.chart-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}

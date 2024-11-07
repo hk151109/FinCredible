@@ -1,32 +1,23 @@
-import React, { useState } from 'react';
-import PredictionDisplay from '../components/PredictionDisplay';
-import './MLPredictionPage.css';
+// page.js
+import React from 'react'; 
+import Navbar from '../components/Navbar'; // Import the Navbar component
+import PredictionChart from '../components/PredictionChart'; // Import PredictionChart component
+import './MLPredictionPage.css'; // Ensure this imports the correct CSS file
 
-const MLPredictionPage = () => {
-  const [stockSymbol, setStockSymbol] = useState('');
-  const [predictionData, setPredictionData] = useState(null);
-
-  const handlePredict = async () => {
-    const response = await fetch(`/api/ml/predict/${stockSymbol}`);
-    const data = await response.json();
-    setPredictionData(data);
-  };
-
+export default function PredictionPage() {
   return (
-    <div className="contain">
-      <div className="input">
-        <label htmlFor="comp">Enter Company Ticker</label>
-        <input
-          type="text"
-          id="comp"
-          value={stockSymbol}
-          onChange={(e) => setStockSymbol(e.target.value)}
-        />
-        <button onClick={handlePredict}>Predict</button>
+    <div className="prediction-main-container">
+      <div className="prediction-page-frame">
+        <Navbar />
+        {/* Centered Prediction Chart Section */}
+        <div className="prediction-content-section">
+          <div className="prediction-wrapper">
+            <div className="prediction-form-section">
+              <PredictionChart />
+            </div>
+          </div>
+        </div>
       </div>
-      {predictionData && <PredictionDisplay predictionData={predictionData} />}
     </div>
   );
-};
-
-export default MLPredictionPage;
+}

@@ -17,7 +17,7 @@ const SideBar = () => {
                         </li>
                         <li className="sidebar-list-item">
                             <AiOutlineStock className="sidebar-icon" />
-                            <Link className="sidebar-link" to="/portfolio/stockmarket">Discover</Link>
+                            <Link className="sidebar-link" to="/stockmarket">Discover</Link>
                         </li>
                     </ul>
                 </div>

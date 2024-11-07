@@ -1,4 +1,7 @@
-require("dotenv").config(); // Load environment variables
+// Load environment variables
+require("dotenv").config();
+
+// Import required modules
 const express = require("express");
 const User = require("./models/User");
 const cors = require("cors");
@@ -9,10 +12,14 @@ const bcrypt = require("bcryptjs");
 const LocalStrategy = require("passport-local").Strategy;
 const PasswordRouter = require("./routes/authRoutes");
 const path = require("path");
+const MongoClient = require("mongodb").MongoClient;
+const createRouter = require("./helpers/create_router");
 
+// Database connection using Mongoose
 const { connectdb } = require("./ConnectionDb");
 connectdb();
 
+// Initialize Express app
 const app = express();
 
 // Middleware to parse JSON and URL-encoded bodies
@@ -22,7 +29,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // CORS configuration for local development
 app.use(
   cors({
-    origin: "http://localhost:3000", // Adjusted for local frontend
+    origin: "http://localhost:3000", // Adjust for your frontend
     credentials: true,
   })
 );
@@ -80,6 +87,7 @@ passport.deserializeUser((id, done) => {
 // Routes for authentication and user management
 app.use("/password", PasswordRouter);
 
+// Google OAuth routes
 app.get(
   "/auth/google",
   passport.authenticate("google", { scope: ["profile", "email"] })
@@ -89,7 +97,7 @@ app.get(
   "/auth/google/callback",
   passport.authenticate("google", { failureRedirect: "/" }),
   function (req, res) {
-    res.redirect("http://localhost:3000/home"); // Redirect to local frontend
+    res.redirect("http://localhost:3000/home"); // Redirect to your frontend
   }
 );
 
@@ -181,13 +189,24 @@ app.get("/api/user/profile", async (req, res) => {
   }
 });
 
-// Serve static files
-app.use(express.static(path.join(__dirname, "../client/build")));
+// Connect to MongoDB and set up shares router
+MongoClient.connect("mongodb://localhost:27017", { useUnifiedTopology: true })
+  .then((client) => {
+    const db = client.db("portfolio");
+    const sharesCollection = db.collection("shares");
+    const sharesRouter = createRouter(sharesCollection);
+    app.use("/api/shares", sharesRouter);
+    console.log("Connection Established for portfolio!!!");
+  })
+  .catch(console.error);
 
-// Catch-all route to serve React app
-app.get("*", (req, res) =>
-  res.sendFile(path.join(__dirname, "../client/build/index.html"))
-);
+// // Serve static files
+// app.use(express.static(path.join(__dirname, "../client/build")));
+
+// // Catch-all route to serve React app
+// app.get("*", (req, res) =>
+//   res.sendFile(path.join(__dirname, "../client/build/index.html"))
+// );
 
 // Start server
 const Port = process.env.PORT || 8080;

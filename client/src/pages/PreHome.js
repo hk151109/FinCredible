@@ -5,6 +5,7 @@ import FinanceNews from '../components/FinanceNews';
 
 import './PreHome.css';
 
+
 export default function PreHome() {
   return (
     <div className="main-container">

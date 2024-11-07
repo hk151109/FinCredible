@@ -25,7 +25,7 @@ export default function Navbar() {
         <li><Link to="/personal-finance">Personal Finance</Link></li>
         <li><Link to="/portfolio">Portfolio</Link></li>
         <li><Link to="/analytics">Analytics</Link></li>
-        <li><Link to="/ml-prediction">Stock Price Prediction</Link></li>
+        <li><Link to="/MLPredictionPage">Stock Price Prediction</Link></li>
       </ul>
       <div className="navbar-buttons">
         {/* Home icon */}

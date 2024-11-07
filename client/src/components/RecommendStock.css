@@ -1,0 +1,84 @@
+/* Recommendation form container */
+.recommendation-form-container {
+    width: 80%;
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70vh;
+}
+
+/* Heading */
+.recommendation-form-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styling */
+.recommendation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.recommendation-input-group input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.recommendation-input-group input:focus {
+    border-color: #d08411;
+    outline: none;
+    box-shadow: 0 0 5px rgba(208, 132, 17, 0.3);
+}
+
+/* Main recommendation button */
+.recommendation-button {
+    padding: 12px;
+    background-color: #d08411;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.recommendation-button:hover {
+    background-color: #b96f0d;
+}
+
+/* Error message */
+.recommendation-error {
+    color: #ff4d4d;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Recommendation list */
+.recommendation-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.recommendation-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}

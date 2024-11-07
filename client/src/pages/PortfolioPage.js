@@ -31,6 +31,8 @@ import PrivateRoute from '../components/PrivateRoute'; // PrivateRoute component
 import "react-toastify/dist/ReactToastify.css";
 import AnalyticsPage from './AnalyticsPage';
 
+import RecommendPage from './RecommendPage';
+
 const MasterContainer = () => {
     const [apiData, setApiData] = useState(fetchedData);
     const [historicalPrices, setHistoricalPrices] = useState(null);
@@ -78,6 +80,7 @@ const MasterContainer = () => {
                                 <Route path="/personal-finance" element={<PersonalFinancePage />} />
                                 <Route path='/portfolio' element={<PortfolioPage />} />
                                 <Route path='/MLPredictionPage' element={<MLPredictionPage />} />
+                                <Route path='/recommend' element={<RecommendPage />} />
 
 
                                 {/* Restricted Route */}

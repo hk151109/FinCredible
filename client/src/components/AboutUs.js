@@ -49,8 +49,8 @@ export default function AboutUs() {
             <p>Monitor your investment portfolio's performance with detailed analytics.</p>
           </li>
           <li>
-            <h3>Stock Price Prediction</h3>
-            <p>Leverage LSTM models to predict stock prices, providing a competitive edge.</p>
+            <h3>Stock Recommendation</h3>
+            <p>Leverage ML models to Recommend stocKS, providing a competitive edge.</p>
           </li>
         </ul>
       </section>
@@ -71,7 +71,7 @@ export default function AboutUs() {
       <footer className="cta-section">
         <h2>Ready to Take Control of Your Financial Journey?</h2>
         <p>Join FinCredible today and embark on a path to financial literacy and success.</p>
-        <Link to="/register"><button className="cta-button">Get Started</button></Link>
+        <Link to="/login"><button className="cta-button">Get Started</button></Link>
         
       </footer>
     </div>

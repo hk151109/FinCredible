@@ -1,0 +1,83 @@
+/* Common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0e2b2; /* Soft gold background */
+    min-height: 100vh;
+  }
+  
+  .recommend-main-container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0e2b2; /* Background color for the main area */
+  }
+  
+  .recommend-page-frame {
+    width: 95%;
+    min-height: 95vh;
+    background-color: #ffffff;
+    border-radius: 20px; /* More rounded corners */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .recommend-page-frame:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+  }
+  
+  .recommend-content-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .recommend-wrapper {
+    width: auto;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .recommend-form-section {
+    width: 100%;
+    background-color: #d7d7d7; /* Light grey background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Center-align content */
+  }
+  
+  .recommend-form-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .recommend-content-section {
+      width: 90%;
+    }
+  
+    .recommend-wrapper {
+      width: 100%;
+    }
+  }
+  

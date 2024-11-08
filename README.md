@@ -139,8 +139,9 @@ npm start
 Open `http://localhost:3000` in your browser.
 
 ## 📸 Screenshots
-- **Home Page (After Login)**:  
-  ![Home Page (After Login)](assets/home_page_after_login.png)
+
+- **Home Page (Before Login)**:  
+  ![Home Page (Before Login)](assets/home_page_before_login.png)
   
 - **Login Page**:  
   ![Login Page](assets/login_page.png)
@@ -148,8 +149,8 @@ Open `http://localhost:3000` in your browser.
 - **Register Page**:  
   ![Register Page](assets/register_page.png)
 
-- **Home Page (Before Login)**:  
-  ![Home Page (Before Login)](assets/home_page_before_login.png)
+  - **Home Page (After Login)**:  
+  ![Home Page (After Login)](assets/home_page_after_login.png)
 
 - **News Tracker Page**:  
   ![News Tracker Page](assets/news_tracker.png)

@@ -86,7 +86,7 @@ cd FinCredible
   GOOGLE_CLIENT_SECRET='your-google-client-secret'
   GOOGLE_REFRESH_TOKEN='your-google-refresh-token'
   EMAIL_USERNAME='your-email-username'
-  PORT=3000
+  PORT=8080
   ```
 
 - **Frontend**: Create a `.env` file in the `client` directory with the following variables:

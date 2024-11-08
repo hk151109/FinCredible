@@ -139,59 +139,50 @@ npm start
 Open `http://localhost:3000` in your browser.
 
 ## 📸 Screenshots
+- **Home Page (After Login)**:  
+  ![Home Page (After Login)](assets/home_page_after_login.png)
+  
 - **Login Page**:  
-![Login Page](link_to_login_image)
+  ![Login Page](assets/login_page.png)
 
 - **Register Page**:  
-![Register Page](link_to_register_image)
-
-- **Google Auth Page**:  
-![Google Auth](link_to_google_auth_image)
+  ![Register Page](assets/register_page.png)
 
 - **Home Page (Before Login)**:  
-![Home Page (Before Login)](link_to_home_page_before_login_image)
-
-- **Home Page (After Login)**:  
-![Home Page (After Login)](link_to_home_page_after_login_image)
+  ![Home Page (Before Login)](assets/home_page_before_login.png)
 
 - **News Tracker Page**:  
-![News Tracker Page](link_to_news_tracker_image)
+  ![News Tracker Page](assets/news_tracker.png)
 
 - **Personal Finance Page**:  
-![Personal Finance Page](link_to_personal_finance_image)
+  ![Personal Finance Page](assets/personal_finance.png)
 
 - **Mutual Fund Calculator**:  
-![Mutual Fund Calculator](link_to_mutual_fund_calculator_image)
+  ![Mutual Fund Calculator](assets/mutual_fund_calculator.png)
 
 - **SIP Calculator**:  
-![SIP Calculator](link_to_sip_calculator_image)
+  ![SIP Calculator](assets/sip_calculator.png)
 
 - **Portfolio Management Page**:  
-![Portfolio Management Page](link_to_portfolio_management_image)
+  ![Portfolio Management Page](assets/portfolio_management.png)
 
 - **Stock Performance in Portfolio**:  
-![Stock Performance](link_to_stock_performance_image)
+  ![Stock Performance](assets/stock_performance.png)
 
 - **Add Shares to Portfolio**:  
-![Add Shares to Portfolio](link_to_add_shares_image)
-
-- **Update Shares in Portfolio**:  
-![Update Shares](link_to_update_shares_image)
-
-- **Remove Stock from Portfolio**:  
-![Remove Stock](link_to_remove_stock_image)
+  ![Add Shares to Portfolio](assets/add_shares.png)
 
 - **Portfolio Analytics**:  
-![Portfolio Analytics](link_to_portfolio_analytics_image)
+  ![Portfolio Analytics](assets/portfolio_analytics.png)
 
 - **Analytics Dashboard**:  
-![Analytics Dashboard](link_to_analytics_dashboard_image)
+  ![Analytics Dashboard](assets/analytics_dashboard.png)
 
 - **Stock Recommendation Page**:  
-![Stock Recommendation](link_to_stock_recommendation_image)
+  ![Stock Recommendation](assets/stock_recommendation.png)
 
 - **User Accounts Page**:  
-![User Accounts](link_to_user_accounts_image)
+  ![User Accounts](assets/user_accounts.png)
 
 ## 🤝 Contributors
 - **Harikrishnan Gopal** – Full Stack Developer

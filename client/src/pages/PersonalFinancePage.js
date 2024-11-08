@@ -37,7 +37,7 @@ export default function PrePersonalFinance() {
                     alt="Investing strategies icon"
                     className="prepersonalfinance-card-img"
                   />
-                  <h3 className="prepersonalfinance-card-title">Investing 101: How to get started</h3>
+                  <h3 className="prepersonalfinance-card-title">Investing 101: Get started</h3>
                   <p className="prepersonalfinance-card-text">6 min read</p>
                 </div>
               </Link>

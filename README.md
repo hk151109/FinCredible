@@ -14,11 +14,12 @@
 - [Contributors](#contributors)
 - [Future Enhancements](#future-enhancements)
 
-## 🛠️ Tech Stack
+## Tech Stack
 ### Frontend
 - **React.js**: For building dynamic and responsive user interfaces.
 - **JavaScript, HTML, CSS**: Core technologies for designing components and styling.
 - **Redux**: Manages state for user preferences, portfolio tracking, and news updates.
+- 🛠️
 
 ### Backend
 - **Node.js**: Provides server-side logic and API routing.

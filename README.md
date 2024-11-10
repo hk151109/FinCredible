@@ -5,14 +5,14 @@
 **FinCredible** is a comprehensive finance platform designed for investment enthusiasts. It aggregates personalized financial news, supports stock portfolio management, provides machine learning-driven stock recommendations, and offers real-time market analysis, empowering users to make informed investment decisions.
 
 ## 📖 Table of Contents
-- [Tech Stack](#tech-stack)
-- [Features](#features)
-- [Installation](#installation)
-- [Environment Variables](#environment-variables)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Contributors](#contributors)
-- [Future Enhancements](#future-enhancements)
+- ![Tech Stack](#tech-stack)
+- ![Features](#features)
+- ![Installation](#installation)
+- ![Environment Variables](#environment-variables)
+- ![Usage](#usage)
+- ![Screenshots](#screenshots)
+- ![Contributors](#contributors)
+- ![Future Enhancements](#future-enhancements)
 
 ## 🛠️ Tech Stack
 ### Frontend
@@ -149,7 +149,7 @@ Open `http://localhost:3000` in your browser.
 - **Register Page**:  
   ![Register Page](assets/register_page.png)
 
-  - **Home Page (After Login)**:  
+- **Home Page (After Login)**:  
   ![Home Page (After Login)](assets/home_page_after_login.png)
 
 - **News Tracker Page**:  

@@ -5,7 +5,7 @@
 **FinCredible** is a comprehensive finance platform designed for investment enthusiasts. It aggregates personalized financial news, supports stock portfolio management, provides machine learning-driven stock recommendations, and offers real-time market analysis, empowering users to make informed investment decisions.
 
 ## 📖 Table of Contents
-- [Tech Stack](#tech-stack)
+- [Tech Stack](#🛠️tech-stack)
 - [Features](#features)
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
@@ -14,12 +14,11 @@
 - [Contributors](#contributors)
 - [Future Enhancements](#future-enhancements)
 
-## Tech Stack
+## 🛠️ Tech Stack
 ### Frontend
 - **React.js**: For building dynamic and responsive user interfaces.
 - **JavaScript, HTML, CSS**: Core technologies for designing components and styling.
 - **Redux**: Manages state for user preferences, portfolio tracking, and news updates.
-- 🛠️
 
 ### Backend
 - **Node.js**: Provides server-side logic and API routing.

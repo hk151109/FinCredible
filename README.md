@@ -140,7 +140,7 @@ Open `http://localhost:3000` in your browser.
 
 ## 📸 Screenshots
 
-- **Home Page (Before Login)**:  
+- **Landing Page**:  
   ![Home Page (Before Login)](assets/home_page_before_login.png)
   
 - **Login Page**:  

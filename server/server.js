@@ -196,7 +196,7 @@ MongoClient.connect("mongodb://localhost:27017", { useUnifiedTopology: true })
     const sharesCollection = db.collection("shares");
     const sharesRouter = createRouter(sharesCollection);
     app.use("/api/shares", sharesRouter);
-    console.log("Connection Established for portfolio!!!");
+    console.log("MongoDB Connection Established for User_portfolio!!!");
   })
   .catch(console.error);
 
@@ -211,5 +211,5 @@ MongoClient.connect("mongodb://localhost:27017", { useUnifiedTopology: true })
 // Start server
 const Port = process.env.PORT || 8080;
 app.listen(Port, () => {
-  console.log(`Server is Running at http://localhost:${Port}`);
+  console.log(`\nServer is Running at http://localhost:${Port}`);
 });

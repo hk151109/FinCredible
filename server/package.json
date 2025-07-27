@@ -4,7 +4,7 @@
   "description": "FinCredible Backend",
   "main": "sever.js",
   "scripts": {
-  "start": "concurrently -k -n \"NODE,FLASK\" -c \"yellow.bold,cyan.bold\" \"npm run server\" \"npm run flask\"",
+  "start": "npm run server",
   "server": "nodemon server.js",
   "flask": "cd MachineLearning && python app.py"
   },

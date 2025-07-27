@@ -11,7 +11,6 @@
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [Contributors](#contributors)
 - [Future Enhancements](#future-enhancements)
 
 ## 🛠️ Tech Stack
@@ -184,10 +183,6 @@ Open `http://localhost:3000` in your browser.
 
 - **User Accounts Page**:  
   ![User Accounts](assets/user_accounts.png)
-
-## 🤝 Contributors
-- **Harikrishnan Gopal** – Full Stack Developer
-- **Aditya Raut** – Full Stack Developer, ML Engineer
 
 ## 🚀 Future Enhancements
 - **Enhanced Machine Learning Models**:  
